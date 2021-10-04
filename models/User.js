@@ -23,6 +23,12 @@ const UserSchema = new Schema({
         lowercase: true,
         validate: [isEmail, 'Enter valid email']
     },
+    phone: {
+        type: String,
+        required: [true, 'Enter phone number'],
+        unique: true,
+        validate: [isPhone, 'Enter valid phone number']
+    },
     password: {
         type: String,
         required: [true, 'Enter valid password'],
