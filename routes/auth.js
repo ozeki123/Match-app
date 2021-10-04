@@ -1,0 +1,12 @@
+//Routes necessary for authentification of user
+
+const { Router } = require('express');
+const authController = require('../controllers/authControllers');
+const router = Router();
+const auth = require('../middleware/auth');
+
+router.post('/register', authController.register);
+router.post('/login', authController.login);
+router.get('/user', auth, authController.user);
+
+module.exports = router;
