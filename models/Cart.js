@@ -2,7 +2,6 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const CartSchema = new Schema ({
-    //ID of user who is owner of cart
     user_id: {
         type: String
     },
