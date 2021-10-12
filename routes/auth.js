@@ -1,5 +1,4 @@
 //Routes necessary for authentification of user
-
 const { Router } = require('express');
 const authController = require('../controllers/authControllers');
 const router = Router();
