@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const CartSchema = new Schema ({
-    user_id: {
+    userId: {
         type: String
     },
     items: [{
@@ -18,7 +18,7 @@ const CartSchema = new Schema ({
         },
         price: Number
     }],
-    total_price: {
+    bill: {
         type: Number, 
         required: true,
         default: 0
